@@ -838,7 +838,11 @@ setShowCountryButtons(false)
   } catch(e) {}
 
   }
-  useEffect(()=>{loadOptions()}, [])
+  useEffect(()=>{loadOptions();
+
+    gameStorage.setItem("lastVersion", "1.0.0");
+
+  }, [])
 
   useEffect(() => {
     if(options && options.units && options.mapType) {
