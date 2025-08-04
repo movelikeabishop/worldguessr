@@ -628,7 +628,7 @@ setShowCountryButtons(false)
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url('https://www.worldguessr.com/street1.jpg') no-repeat center center/cover;
+      background: url('https://i.postimg.cc/Jzv6Z134/pexels-pixabay-41949.jpg') no-repeat center center/cover;
       font-family: 'Arial', sans-serif;
     }
 
@@ -2078,12 +2078,10 @@ if(inCrazyGames) {
           <div className="footer_btns">
         { !isApp &&  !inCoolMathGames && (
                   <>
-                <Link target="_blank" href={"https://discord.gg/ubdJHjKtrC"}><button className="home__squarebtn gameBtn discord" aria-label="Discord"><FaDiscord className="home__squarebtnicon" /></button></Link>
+                {/* <Link target="_blank" href={"https://discord.gg/ubdJHjKtrC"}><button className="home__squarebtn gameBtn discord" aria-label="Discord"><FaDiscord className="home__squarebtnicon" /></button></Link> */}
 
                   { !inCrazyGames && (
                     <>
-                <Link target="_blank" href={"https://www.youtube.com/@worldguessr?sub_confirmation=1"}><button className="home__squarebtn gameBtn youtube" aria-label="Youtube"><FaYoutube className="home__squarebtnicon" /></button></Link>
-                <Link target="_blank" href={"https://github.com/codergautam/worldguessr"}><button className="home__squarebtn gameBtn" aria-label="Github"><FaGithub className="home__squarebtnicon" /></button></Link>
                 </>
                 )}
                 <Link href={"/leaderboard"+(inCrazyGames ? "?crazygames": "")}>
@@ -2111,7 +2109,7 @@ if(inCrazyGames) {
         msUserSelect: 'none',
         pointerEvents: 'none',
       }}>
-      <NextImage.default src={'./street1.jpg'}
+      <NextImage.default src={'./street3.jpg'}
       draggable={false}
       fill   alt="Game Background" style={{objectFit: "cover",userSelect:'none'}}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -2189,7 +2187,7 @@ if(inCrazyGames) {
           <div className="home__ui">
             { onboardingCompleted && (
               <>
-            <h1 className="home__title">WorldGuessr</h1>
+            <h1 className="home__title">GeoClash</h1>
 
               {/* { height > 650 && width > 1000 && (
             <HomeNotice text={text("maintenanceText1", {date: getMaintenanceDate(), time: getTimeString()})} shown={true} />
@@ -2216,7 +2214,7 @@ if(inCrazyGames) {
                   // setScreen("singleplayer")
                   crazyMidgame(() => setScreen("singleplayer"))
                 }
-              }} >{text("singleplayer")}</button>
+              }} >{text("Single Player")}</button>
         {/* <span className="bigSpan">{text("playOnline")}</span> */}
 
         <div className="multiplayerPrivBtns">
@@ -2260,7 +2258,7 @@ if(inCrazyGames) {
             </div>
             </center>
 
-          <div style={{ marginTop: "20px" }}>
+          {/* <div style={{ marginTop: "20px" }}>
           <center>
               { !loading && screen === "home"  && !inCrazyGames && !inCoolMathGames &&(!session?.token?.supporter) && (
     <Ad inCrazyGames={inCrazyGames} screenH={height} types={[[320,50],[728,90],[970,90],[970,250]]} screenW={width} />
@@ -2280,7 +2278,7 @@ if(inCrazyGames) {
     />
               )}
     </center>
-            </div>
+            </div> */}
           </div>
           </>
         )}

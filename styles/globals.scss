@@ -218,7 +218,7 @@ html {
   z-index: 101;
 }
 .gameBtn {
-  background-color: #327A60;
+  background-color: #6a327a;
   color: white;
   font-size: clamp(1.3em, 3vw, 5em);
   cursor: pointer;
@@ -230,7 +230,7 @@ html {
   border-radius: 15px;
 }
 .gameBtn:hover {
-  background-color: #225541;
+  background-color: #421e4c;
 }
 // disabled gamebtn
 .gameBtn[disabled] {
@@ -245,7 +245,7 @@ html {
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 1.5em;
-  background-color: #327A60;
+  background-color: #6a327a;
   display: block;
   width: 100%;
   white-space: nowrap;
@@ -255,7 +255,7 @@ html {
 }
 
 .homeBtn.singleplayer {
-  background-color: #547a32;
+  background-color: #6a327a;
 }
 // mobile homebtn has smaller font size and is less bold
 @media screen and (max-width: 600px) {
@@ -270,10 +270,10 @@ html {
   cursor: not-allowed;
 }
 .homeBtn:hover {
-  background-color: #225541;
+  background-color: #421e4c;
 }
 .homeBtn.singleplayer:hover {
-  background-color: #485522;
+  background-color: #421e4c;
 }
 .accountBtn {
   position: fixed;
